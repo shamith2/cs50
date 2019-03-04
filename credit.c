@@ -2,7 +2,8 @@
 #include <cs50.h>
 int main()
 {
-    long int number = 0,number2 = 0,number3 = 0,sum = 0,sum2= 0,sum3 = 0,temp,temp2,temp3,temp4,count = 0;
+    long int number = 0, number2 = 0, number3 = 0; 
+    int sum = 0, sum2 = 0, sum3 = 0,temp = 0, temp2 = 0, temp3 = 0, temp4 = 0, count = 0;
     do
     {
         number = get_long("Number: ");
