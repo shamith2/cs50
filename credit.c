@@ -1,3 +1,7 @@
+/* Program to compute change
+ * Copyright: Shamith Achanta 
+ */
+
 #include <stdio.h>
 #include <math.h>
 #include <cs50.h>
