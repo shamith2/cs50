@@ -1,4 +1,6 @@
-/* Program to compute change */
+/* Program to compute change
+ * Copyright: Shamith Achanta 
+ */
 
 #include <stdio.h>
 #include <math.h>
