@@ -108,7 +108,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
-// limits pixel values to 255
+// caps pixel values at 255
 int cap(int RGB)
 {
     if (RGB >= 255)
