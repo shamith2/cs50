@@ -1,3 +1,7 @@
+/* Program to recover JPEGs from a forensic image
+ * Copyright: Shamith Achanta
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
