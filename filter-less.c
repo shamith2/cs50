@@ -1,7 +1,7 @@
 #include "helpers.h"
 #include <math.h>
 
-int limit(int);
+int cap(int);
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
@@ -23,7 +23,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 }
 
 // limits pixel values to 255
-int limit(int RGB)
+int cap(int RGB)
 {
     if (RGB >= 255)
     {
@@ -47,9 +47,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             BYTE org_blue = pixel->rgbtBlue;
 
             // new_pixel values
-            int new_blue = limit(round(0.272 * org_red + 0.534 * org_green + 0.131 * org_blue));
-            int new_green = limit(round(0.349 * org_red + 0.686 * org_green + 0.168 * org_blue));
-            int new_red = limit(round(0.393 * org_red + 0.769 * org_green  + 0.189 * org_blue));
+            int new_blue = cap(round(0.272 * org_red + 0.534 * org_green + 0.131 * org_blue));
+            int new_green = cap(round(0.349 * org_red + 0.686 * org_green + 0.168 * org_blue));
+            int new_red = cap(round(0.393 * org_red + 0.769 * org_green  + 0.189 * org_blue));
 
             // assign new_pixel values to org_pixels
             pixel->rgbtBlue = new_blue;
